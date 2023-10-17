@@ -1,0 +1,15 @@
+.homepage {
+  display: flex;
+  flex-direction: row; /* Set the direction to row */
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+
+  text-align: center;
+  background-color: transparent;
+}
+
+.homepage__container__Screenshot {
+}
+.homepage__container__Cancel {
+}

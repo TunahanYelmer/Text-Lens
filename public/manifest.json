@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TextLens",
+  "version": "1.0",
+  "description": "A Chrome extension that recognizes text from images",
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "storage",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "http://localhost/*",
+    "https://localhost/*"
+  ]
+ 
+}

@@ -1,0 +1,29 @@
+.Toastify__toast {
+  color: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+  max-height: 48px;
+}
+.toastifystyles.toast_container {
+  color: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+  height: 48px;
+}
+.toastifystyles.toast_container:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+.toastifystyles.toast_container {
+  color: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+  max-height: 48px;
+}

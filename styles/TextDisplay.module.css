@@ -1,0 +1,113 @@
+.textDisplay {
+  background-color: #5468ff;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  color: #fff;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  min-width: 166px;
+  max-height: 335px;
+  max-width: 275px;
+  overflow: auto;
+  position: relative;
+  scrollbar-width: thin;
+  scrollbar-color: #5adaff #5468ff;
+  margin-top: 20px;
+}
+.textDisplay_Waterfall {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.textDisplay_Container {
+  position: relative;
+  background-color: #5468ff;
+  border-radius: 6px;
+  min-width: 166px; /* Set minimum width to accommodate the copy button */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Display as inline-flex to match the width */
+}
+
+.textDisplay::-webkit-scrollbar {
+  width: 8px;
+}
+
+.textDisplay::-webkit-scrollbar-thumb {
+  background-color: #5adaff;
+  border-radius: 4px;
+}
+
+.textDisplay::-webkit-scrollbar-thumb:hover {
+  background-color: #4da2b9;
+}
+
+.textDisplay_text {
+  white-space: pre-wrap;
+  height: calc(100% - 20px);
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.textDisplay_Copy {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
+  position: absolute;
+  top: 0;
+  right: 1;
+  left: 1;
+  min-width: 166px;
+  border: 1px;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 14px;
+  height: 16px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  padding: 0 8px;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+}
+
+.textDisplay_Copy:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.textDisplay_Copy:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.textDisplay_Copy:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
